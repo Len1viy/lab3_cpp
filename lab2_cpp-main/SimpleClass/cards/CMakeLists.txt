@@ -1,0 +1,1 @@
+add_library(cards cards.h cards.cpp)
