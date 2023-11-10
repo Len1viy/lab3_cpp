@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/lab3_cpp.dir/main.cpp.o -o lab3_cpp  libmatrix.a 

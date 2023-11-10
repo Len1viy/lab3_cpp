@@ -1,0 +1,3 @@
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/CMakeFiles/Game.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/Game.dir/main.cpp.o CMakeFiles/Game.dir/Matrix.cpp.o -o Game 
