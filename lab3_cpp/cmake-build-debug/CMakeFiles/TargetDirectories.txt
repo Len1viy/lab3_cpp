@@ -1,3 +1,15 @@
 /tmp/tmp.dlSuVIRW4O/cmake-build-debug/CMakeFiles/Game.dir
 /tmp/tmp.dlSuVIRW4O/cmake-build-debug/CMakeFiles/edit_cache.dir
 /tmp/tmp.dlSuVIRW4O/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Inventory/CMakeFiles/inventory.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Inventory/CMakeFiles/edit_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Inventory/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Character/CMakeFiles/characters.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Character/CMakeFiles/edit_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Character/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Level/CMakeFiles/level.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Level/CMakeFiles/edit_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/Level/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/tests/CMakeFiles/test.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
+/tmp/tmp.dlSuVIRW4O/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir

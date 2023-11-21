@@ -3,10 +3,13 @@
 //
 
 #include "Item.h"
+#include "../../Character/Kinds/Operative.h"
 
-namespace inventory {
-    bool Item::isOwner() {
-        if (owner == nullptr) return false;
-        return true;
-    }
-} // game
+
+//void Item::use(Operative &oper) {
+//}
+//
+//std::ostream &operator<<(std::ostream &c, Item &item) {
+//    item.print(c);
+//    return c;
+//}

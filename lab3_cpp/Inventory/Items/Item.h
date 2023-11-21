@@ -6,41 +6,55 @@
 #define LAB3_CPP_ITEM_H
 
 #include "iostream"
-#include "../../Character/Character.h"
 
+class Operative;
 
-namespace inventory {
-    typedef enum TypeOfItem {
-        weapon,
-        containerForBullets,
-        medKit,
-    } TypeOfItem;
+typedef enum BulletType {
+    assault,
+    sniper,
+    expansive,
+    pistol,
+    none
+} BulletType;
 
-    class Item {
-    private:
-         TypeOfItem name;
-         int weight;
-         character::Character *owner;
-    public:
-        Item(TypeOfItem n, int w) : name(n), weight(w) {}
-        TypeOfItem getName() const {return name;};
-        Item &setName(const TypeOfItem nname) {
-            name = nname;
-            return *this;
-        }
-        int getWeight() const {return weight;};
-        Item &setWeight(const int nweight) {
-            weight = nweight;
-            return *this;
-        }
-        character::Character &getOwner() const { return *owner; };
-        Item &setOwner(character::Character *character) {
-            owner = character;
-            return *this;
-        }
-        virtual bool isOwner();
-    };
+typedef enum TypeOfItem {
+    weapon,
+    containerForBullets,
+    medKit,
+} TypeOfItem;
 
-} // game
+class Item {
+private:
+    TypeOfItem name;
+    int weight;
+public:
+    Item() : name(), weight(0) {};
+
+    Item(TypeOfItem n, int w) : name(n), weight(w) {}
+
+    [[nodiscard]] TypeOfItem getName() const { return name; };
+
+    Item &setName(const TypeOfItem nname) {
+        name = nname;
+        return *this;
+    }
+
+    [[nodiscard]] int getWeight() const { return weight; };
+
+    Item &setWeight(const int nweight) {
+        weight = nweight;
+        return *this;
+    }
+
+    virtual int use(Operative &) = 0;
+//    virtual std::ostream &print(std::ostream &) = 0;
+
+    Item(Item &&element) noexcept: name(element.name), weight(element.weight) {};
+
+    Item(Item &element) noexcept: name(element.name), weight(element.weight) {};
+
+//    friend std::ostream& operator<<(std::ostream &c, Item &item);
+};
+
 
 #endif //LAB3_CPP_ITEM_H

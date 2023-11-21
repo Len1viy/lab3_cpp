@@ -4,7 +4,6 @@
 
 #include "Inventory.h"
 
-namespace inventory {
 
     Item &Inventory::operator[](int index) {
         return *items[index];
@@ -17,9 +16,18 @@ namespace inventory {
         return *this;
     }
 
-    Inventory &Inventory::deleteItem(int index) {
+    Item *Inventory::deleteItem(int index) {
         weight -= items[index]->getWeight();
+        Item *ans = items[index];
         items.erase(items.begin() + index);
-        return *this;
+        countOfItems -= 1;
+        return ans;
     }
-} // lab3
+
+//std::ostream &operator<<(std::ostream &c, Inventory &inventory) {
+//    if (inventory.getItems().empty()) return c;
+//    for (int i = 0; i < inventory.getItems().size(); i++) {
+//        c << inventory[i];
+//    }
+//    return c;
+//}

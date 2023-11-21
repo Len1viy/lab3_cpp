@@ -5,19 +5,20 @@
 #ifndef LAB3_CPP_ATTACK_H
 #define LAB3_CPP_ATTACK_H
 
-#include "../Character/Character.h"
+#include "iostream"
+#include "../Level/Matrix.h"
+class Character;
+class Attack {
+public:
+    virtual bool isHit(int acc) {
+        int check = rand() % 100;
+        if (check < acc) return true;
+        return false;
+    }
 
-
-namespace interface {
-    class Attack {
-    public:
-
-        virtual void attack(character::Character *enemy) = 0;
-
-        virtual int getDamage() = 0;
-    };
-}
-
+    virtual int getDamage() = 0;
+    virtual void attack(Character *enemy, Matrix<Cell> &matr) = 0;
+};
 
 
 #endif //LAB3_CPP_ATTACK_H

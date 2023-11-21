@@ -1,4 +1,0 @@
-/tmp/tmp.h7HWHuB9rm/cmake-build-debug/CMakeFiles/lab1_cpp.dir
-/tmp/tmp.h7HWHuB9rm/cmake-build-debug/CMakeFiles/testing.dir
-/tmp/tmp.h7HWHuB9rm/cmake-build-debug/CMakeFiles/edit_cache.dir
-/tmp/tmp.h7HWHuB9rm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

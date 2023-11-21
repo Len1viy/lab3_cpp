@@ -4,38 +4,50 @@
 
 #ifndef LAB3_CPP_INVENTORY_H
 #define LAB3_CPP_INVENTORY_H
+
 #include "iostream"
 #include "Items/Item.h"
-#include "../Matrix.h"
-#include <map>
+#include <vector>
 
-namespace inventory {
+class Inventory {
+private:
+    int weight;
+    int countOfItems;
+    std::vector<Item *> items;
+public:
+    Inventory() : weight(0), countOfItems(0), items(std::vector<Item *>()) {}
 
-    class Inventory {
-    private:
-        int weight;
-        int countOfItems;
-        std::vector<Item *> items;
-    public:
-        Inventory() : weight(0), countOfItems(0), items(std::vector<Item *>()){}
-        int getCurrentWeight() const { return weight; }
-        Inventory &setCurrentWeight(int nweight) {
-            weight = nweight;
-            return *this;
-        };
-        int getCountOfItems() const { return countOfItems; }
-        Inventory &setCountOfItems(int count) {
-            countOfItems = count;
-            return *this;
-        }
+    ~Inventory() {
+//        for (auto i: items) {
+//            delete[] i;
+//        }
+    }
 
-        Inventory &addItem(Item *item);
-        Inventory &deleteItem(int index);
+    [[nodiscard]] std::vector<Item *> getItems() const { return items; }
 
-        Item &operator[](int index);
+    [[nodiscard]] int getCurrentWeight() const { return weight; }
 
+    Inventory &setCurrentWeight(int nweight) {
+        weight = nweight;
+        return *this;
     };
 
-} // lab3
+    [[nodiscard]] int getCountOfItems() const { return countOfItems; }
+
+    Inventory &setCountOfItems(int count) {
+        countOfItems = count;
+        return *this;
+    }
+
+    Inventory &addItem(Item *item);
+
+    Item *deleteItem(int index);
+
+    Item &operator[](int index);
+
+
+    friend std::ostream &operator<<(std::ostream &c, Inventory &inventory);
+};
+
 
 #endif //LAB3_CPP_INVENTORY_H

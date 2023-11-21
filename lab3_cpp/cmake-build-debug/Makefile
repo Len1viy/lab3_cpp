@@ -129,29 +129,57 @@ Game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/build
 .PHONY : Game/fast
 
-Matrix.o: Matrix.cpp.o
-.PHONY : Matrix.o
+#=============================================================================
+# Target rules for targets named inventory
 
-# target to build an object file
-Matrix.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Matrix.cpp.o
-.PHONY : Matrix.cpp.o
+# Build rule for target.
+inventory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inventory
+.PHONY : inventory
 
-Matrix.i: Matrix.cpp.i
-.PHONY : Matrix.i
+# fast build rule for target.
+inventory/fast:
+	$(MAKE) $(MAKESILENT) -f Inventory/CMakeFiles/inventory.dir/build.make Inventory/CMakeFiles/inventory.dir/build
+.PHONY : inventory/fast
 
-# target to preprocess a source file
-Matrix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Matrix.cpp.i
-.PHONY : Matrix.cpp.i
+#=============================================================================
+# Target rules for targets named characters
 
-Matrix.s: Matrix.cpp.s
-.PHONY : Matrix.s
+# Build rule for target.
+characters: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 characters
+.PHONY : characters
 
-# target to generate assembly for a file
-Matrix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Matrix.cpp.s
-.PHONY : Matrix.cpp.s
+# fast build rule for target.
+characters/fast:
+	$(MAKE) $(MAKESILENT) -f Character/CMakeFiles/characters.dir/build.make Character/CMakeFiles/characters.dir/build
+.PHONY : characters/fast
+
+#=============================================================================
+# Target rules for targets named level
+
+# Build rule for target.
+level: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 level
+.PHONY : level
+
+# fast build rule for target.
+level/fast:
+	$(MAKE) $(MAKESILENT) -f Level/CMakeFiles/level.dir/build.make Level/CMakeFiles/level.dir/build
+.PHONY : level/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +214,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Game"
-	@echo "... Matrix.o"
-	@echo "... Matrix.i"
-	@echo "... Matrix.s"
+	@echo "... characters"
+	@echo "... inventory"
+	@echo "... level"
+	@echo "... test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

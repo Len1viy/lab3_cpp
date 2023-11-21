@@ -10,4 +10,10 @@ typedef struct Point {
     int y;
 } Point;
 
+typedef enum Side{
+    player,
+    enemy
+} Side;
+
+
 #endif //LAB3_CPP_POINT_H
