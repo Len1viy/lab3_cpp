@@ -53,8 +53,16 @@ bool Cell::operator==(const Cell &other) const {
 }
 
 bool Cell::isWeapon() {
+    if (items.empty()) return false;
     for (auto &i: items) {
         if (i->getName() == TypeOfItem::weapon) return true;
         return false;
     }
+}
+
+Cell::Cell(Cell &nCell) {
+    type = nCell.type;
+    items = nCell.items;
+    p = nCell.p;
+    status = nCell.status;
 }

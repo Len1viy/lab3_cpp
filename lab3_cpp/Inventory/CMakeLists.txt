@@ -1,0 +1,2 @@
+add_library(inventory Inventory.cpp Inventory.h Items/Item.cpp Items/Item.h Items/ContainerForBullet.cpp
+        Items/ContainerForBullet.h Items/MedKit.cpp Items/Weapon.cpp Items/MedKit.h Items/Weapon.h)

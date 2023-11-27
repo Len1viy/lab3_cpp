@@ -1,0 +1,1 @@
+add_library(interfaces Attack.h UserInventory.h UserWeapon.h)

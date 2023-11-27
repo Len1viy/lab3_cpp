@@ -36,7 +36,6 @@ bool Wild::canAttackToCell(Cell *cell, std::vector<Cell *> points) {
     return way(getCell(), cell) <= 1 && cell->canMove();
 }
 
-bool Wild::canAttack() {return true;}
 
 Character &Wild::move1(Matrix<Cell> &matr, std::vector<Character *> iSeeEnemies) {
     std::vector<Cell *> points = iSee(matr);
@@ -72,6 +71,7 @@ Character &Wild::move1(Matrix<Cell> &matr, std::vector<Character *> iSeeEnemies)
         changeTime(getCharacteristics().pointsForStep, -1);
         setCell(closerForGoing[rand() % closerForGoing.size()]);
     }
+    return *this;
 }
 
 void Wild::attack(Character *enemy, Matrix<Cell> &matr) {

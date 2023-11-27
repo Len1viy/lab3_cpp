@@ -59,10 +59,6 @@ void Operative::useItem(Item *item) {
     changeTime(item->use(*this), -1);
 }
 
-void Operative::deleteFromInventory(int index) {
-    inventory.deleteItem(index);
-}
-
 
 
 int Operative::getDamage() {
@@ -178,26 +174,29 @@ bool Operative::canAttackToCell(Cell *cell, std::vector<Cell *> points) {
     return true;
 }
 
-bool Operative::canAttack() { return true; }
+void Operative::deleteFromInventory(int index) {
+    inventory.deleteItem(index);
+}
 
-void Operative::move(int direction, Matrix<Cell> &matr) {
+
+void Operative::move(Direction direction, Matrix<Cell> &matr) {
     switch (direction) {
-        case 1:
+        case Direction::left:
             if (0 == getX() || !matr.getElementByAdress(getY(), getX() - 1)->canMove()) return;
             setCell(matr.getElementByAdress(getY(), getX() - 1));
             changeTime(getPointsForStep(), -1);
             break;
-        case 2:
+        case Direction::up:
             if (0 == getY() || !matr.getElementByAdress(getY() - 1, getX())->canMove()) return;
             setCell(matr.getElementByAdress(getY() - 1, getX()));
             changeTime(getPointsForStep(), -1);
             break;
-        case 3:
+        case Direction::right:
             if (matr.getCols() - 1 == getX() || !matr.getElementByAdress(getY(), getX() + 1)->canMove()) return;
             setCell(matr.getElementByAdress(getY(), getX() + 1));
             changeTime(getPointsForStep(), -1);
             break;
-        case 4:
+        case Direction::down:
             if (matr.getRows() == getY() || !matr.getElementByAdress(getY() + 1, getX())->canMove()) return;
             setCell(matr.getElementByAdress(getY() + 1, getX()));
             changeTime(getPointsForStep(), -1);

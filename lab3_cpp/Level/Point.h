@@ -15,5 +15,12 @@ typedef enum Side{
     enemy
 } Side;
 
+typedef enum Direction {
+    left,
+    right,
+    up,
+    down
+} Direction;
+
 
 #endif //LAB3_CPP_POINT_H

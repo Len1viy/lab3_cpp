@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/list_tests_chars.dir/test/ListTests.cpp.o -o list_tests_chars 

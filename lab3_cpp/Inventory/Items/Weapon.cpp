@@ -31,6 +31,7 @@ Weapon &Weapon::operator=(const Weapon &weapon1) {
     bullet = weapon1.bullet;
     currentCountOfBullets = weapon1.currentCountOfBullets;
     maxCountOfBullets = weapon1.maxCountOfBullets;
+    return *this;
 }
 
 bool Weapon::operator==(const Weapon &weapon1) const {
@@ -58,7 +59,7 @@ bool Weapon::operator!=(const Weapon &weapon1) const {
 
 int Weapon::use(Operative &oper) {
     if (*(oper.getActiveWeapon()) != Weapon()) {
-        Weapon weapon = *(oper.getActiveWeapon());
+        Weapon *weapon = oper.getActiveWeapon();
         int index;
         for (int i = 0; i < oper.getInventory().getItems().size(); i++) {
             if (oper.getInventory().getItems()[i] == this) {
@@ -67,9 +68,18 @@ int Weapon::use(Operative &oper) {
             }
         }
         oper.deleteFromInventory(index);
-        oper.takeItem(oper.getActiveWeapon());
+        oper.throwWeapon();
+        oper.takeItem(weapon);
         oper.setActiveWeapon(this);
     } else {
+        int index = -1;
+        for (int i = 0; i < oper.getInventory().getItems().size(); i++) {
+            if (oper.getInventory().getItems()[i] == this) {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1) oper.deleteFromInventory(index);
         oper.setActiveWeapon(this);
     }
     return 0;

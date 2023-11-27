@@ -5,6 +5,7 @@
 #include "../Character/Kinds/Reasonable.h"
 
 
+
 //    Level &Level::createCharacter() {
 //        characters.push_back(new character::Operative());
 //        return *this;
@@ -39,7 +40,8 @@ Level &Level::createCharacter() {
 //            np.x = rand() % matr.getCols();
 //            np.y = rand() % matr.getRows();
 //        }
-    characters.insert({cell, new Operative("operative", nc, cell, 20, 150)});
+    Operative *operative = new Operative("operative", nc, matr.getElementByAdress(np.y, np.x), 20, 150);
+    characters.insert({matr.getElementByAdress(np.y, np.x), operative});
 }
 
 Level &Level::createEnemy(TypeOfCreature type) {
@@ -140,19 +142,40 @@ Level &Level::move() {
     return *this;
 }
 
+Level &Level::changePositionsPlayers() {
+    std::vector<Operative *> arrayOfOpers;
+    for (auto i: characters) {
+        arrayOfOpers.push_back(i.second);
+
+    }
+    std::vector<Enemy *> arrayOfEnemy;
+    for (auto i: enemies) {
+        arrayOfEnemy.push_back(i.second);
+    }
+    characters.clear();
+    for (auto i: arrayOfOpers) {
+        characters.insert({i->getCell(), i});
+    }
+    enemies.clear();
+    for (auto i: arrayOfEnemy) {
+        enemies.insert({i->getCell(), i});
+    }
+    return *this;
+}
+
 Level &Level::makeActionPlayer(std::vector<int> option, Operative *oper) {
     switch (option[0]) {
         case 1:
-            oper->move(1, getMap());
+            oper->move(Direction::left, getMap());
             break;
         case 2:
-            oper->move(2, getMap());
+            oper->move(Direction::up, getMap());
             break;
         case 3:
-            oper->move(3, getMap());
+            oper->move(Direction::right, getMap());
             break;
         case 4:
-            oper->move(4, getMap());
+            oper->move(Direction::down, getMap());
             break;
         case 5: { // атаковать
             std::vector<Character *> iSeeEnemies;
@@ -192,6 +215,7 @@ Item *Level::chooseWeaponForTake(Cell *cell) {
     for (auto i: cell->getItems()) {
         if (i->getName() == TypeOfItem::weapon) return i;
     }
+    return nullptr;
 }
 
 
@@ -212,11 +236,9 @@ Level &Level::movePlayer() {
     }
     characters.clear();
     for (auto i: arrayOfOpers) {
-        std::cout << i->getCell()->getPoint().y << " " << i->getCell()->getPoint().x << "\n";
         characters.insert({i->getCell(), i});
     }
     return *this;
-
 }
 
 //Character *Level::chooseCharacterForAttack(std::vector<Character *> enemy, int index) {

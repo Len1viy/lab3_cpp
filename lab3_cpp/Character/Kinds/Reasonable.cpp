@@ -77,7 +77,6 @@ Weapon *Reasonable::findWeapon() {
 }
 
 
-bool Reasonable::canAttack() { return true; }
 
 bool Reasonable::canAttackToCell(Cell *cell, std::vector<Cell *> points) {
     if (cell == nullptr) return false;
@@ -191,12 +190,16 @@ Character &Reasonable::move1(Matrix<Cell> &matr, std::vector<Character *> iSeeEn
                 setCell(closerForGoing[rand() % closerForGoing.size()]);
             }
             else {
-                Cell *goTo = lee(matr, target)[1];
-                if (goTo != nullptr) setCell(goTo);
+                std::vector<Cell*> answer = lee(matr, target);
+                Cell *goTo;
+                if (answer.size() > 1) {
+                    goTo = answer[1];
+                }
                 else {
                     goTo = target;
-                    setCell(goTo);
                 }
+                setCell(goTo);
+
                 if (goTo == closerStock) {
                     if (visitedStocks.size() == stocks.size()) visitedStocks.clear();
                     visitedStocks.push_back(goTo);

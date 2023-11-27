@@ -9,15 +9,29 @@
 #include <iostream>
 #include "Enemy.h"
 
-
+/**
+ * @brief class of enemy with type Wild. wild creatures have mission - attack and chase operatives
+ */
 class Wild : public Enemy, public Attack {
 private:
     int accuracy;
     int minDamage;
     int maxDamage;
 public:
+    /**
+     * @brief default constructor with standard characteristics
+     */
     Wild() : Enemy(TypeOfCreature::wild), accuracy(100), minDamage(1), maxDamage(3) {};
 
+/**
+ * constructor
+ * @param nm creature's name
+ * @param c creature's characteristics
+ * @param ncell creature's cell on which he will stay
+ * @param acc creature's accuracy
+ * @param minD creature's minimal damage
+ * @param maxD creature's maximum damage
+ */
     Wild(const std::string &nm, Characteristics c, Cell *ncell, int acc, int minD, int maxD) :
             Enemy(nm, c, ncell, TypeOfCreature::wild, Side::enemy),
             accuracy(acc),
@@ -26,20 +40,42 @@ public:
 
     [[nodiscard]] int getAccuracy() const { return accuracy; };
 
+/// \brief setter of accuracy
+/// \param naccuracy new accuracy
+/// \return changed accuracy
     Wild &setAccuracy(int naccuracy) {
         accuracy = naccuracy;
         return *this;
     };
 
+    /**
+     * @brief getter of maximum damage of wild
+     * @return maximum damage which wild can deal
+     */
     [[nodiscard]] int getMaxDamage() const { return maxDamage; };
 
+/**
+ * @brief setter of maximum damage
+ * @param nMaxDamage new maximum damage
+ * @return changed wild
+ */
     Wild &setMaxDamage(int nMaxDamage) {
         maxDamage = nMaxDamage;
         return *this;
     }
 
+    /**
+     * @brief getter of minimal damage of wild
+     * @return minimal damage which wild can deal
+     */
+
     [[nodiscard]] int getMinDamage() const { return minDamage; };
 
+/**
+ * @brief setter of minimal damage
+ * @param nMinDamage new minimal damage
+ * @return changed wild
+ */
     Wild &setMinDamage(int nMinDamage) {
         minDamage = nMinDamage;
         return *this;
@@ -54,8 +90,6 @@ public:
 
     void Dead() override;
 
-
-    bool canAttack() override;
 
     bool canAttackToCell(Cell *cell, std::vector<Cell *> points) override;
 

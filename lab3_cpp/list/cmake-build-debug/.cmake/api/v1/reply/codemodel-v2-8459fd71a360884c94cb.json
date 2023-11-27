@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "list",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "list_allocator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_allocator-Debug-37cc3bc2796b8229c02e.json",
+					"name" : "list_allocator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_chars::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_chars-Debug-a79475c832caa463dfc7.json",
+					"name" : "list_chars",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_default::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_default-Debug-3aa378e9e9c744619076.json",
+					"name" : "list_default",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_tests_allocator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_tests_allocator-Debug-c6eb96d2e589a52b2455.json",
+					"name" : "list_tests_allocator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_tests_chars::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_tests_chars-Debug-6727a522c5fd4380ef21.json",
+					"name" : "list_tests_chars",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_tests_default::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_tests_default-Debug-354a86e8b06840cfdd76.json",
+					"name" : "list_tests_default",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_tests_union::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_tests_union-Debug-33f7bf7950c4f345b62d.json",
+					"name" : "list_tests_union",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_union::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_union-Debug-e5473ba8d493db2b79e0.json",
+					"name" : "list_union",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug",
+		"source" : "/tmp/tmp.dlSuVIRW4O/list"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,2 @@
+add_library(characters Character.h Character.cpp Kinds/Enemy.cpp Kinds/Forager.cpp Kinds/Operative.cpp Kinds/Reasonable.cpp Kinds/Wild.cpp
+        Kinds/Enemy.h Kinds/Forager.h Kinds/Operative.h Kinds/Reasonable.h Kinds/Wild.h ../Interfaces/Attack.h ../Interfaces/UserInventory.h ../Interfaces/UserWeapon.h)

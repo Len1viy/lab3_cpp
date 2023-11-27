@@ -1,15 +1,10 @@
-//
-// Created by vadim on 16.10.2023.
-//
-
 #include "Forager.h"
 #include "algorithm"
 
 void Forager::takeAllOfItems() {
     if (getCell()->getItems().empty()) return;
     while(!getCell()->getItems().empty()) {
-        inventory.addItem(getCell()->getItems()[0]);
-        getCell()->delItem(getCell()->getItems()[0]);
+        takeItem(getCell()->getItems()[0]);
     }
 }
 
@@ -55,9 +50,7 @@ void Forager::Dead() {
 Character &Forager::move1(Matrix<Cell> &matr, std::vector<Character *> iSeeEnemies) {
     std::vector<Cell *> points = iSee(matr);
     if (!(getCell()->getItems().empty()) && getCell()->getType() != TypeOfPoint::stock) {
-        while (!getCell()->getItems().empty()) {
-            takeItem(getCell()->getItems()[0]);
-        }
+        takeAllOfItems();
 //        for (auto item: getCell()->getItems()) {
 //            inventory.addItem(item);
 //            getCell()->delItem(item);
@@ -95,9 +88,14 @@ Character &Forager::move1(Matrix<Cell> &matr, std::vector<Character *> iSeeEnemi
                 setCell(closerForGoing[rand() % closerForGoing.size()]);
             } else {
                 Cell *target;
-                target = lee(matr, closerWithItems)[1];
-                if (target == nullptr) setCell(closerWithItems);
-                else setCell(target);
+                std::vector<Cell *> ans = lee(matr, closerWithItems);
+                if (ans.size() > 1) {
+                    target = ans[1];
+                } else {
+                    target = closerWithItems;
+                }
+
+                setCell(target);
                 changeTime(getCharacteristics().pointsForStep, -1);
             }
 
@@ -112,13 +110,14 @@ Character &Forager::move1(Matrix<Cell> &matr, std::vector<Character *> iSeeEnemi
                     closerStock = *i;
                 }
             }
+            std::vector<Cell *> answer = lee(matr, closerStock);
             Cell *target;
-            target = lee(matr, closerStock)[1];
-            if (target != nullptr) setCell(target);
-            else {
+            if (answer.size() > 1) {
+                target = answer[1];
+            } else {
                 target = closerStock;
-                setCell(target);
             }
+            setCell(target);
             if (target == closerStock) {
                 if (visitedStocks.size() == stocks.size()) visitedStocks.clear();
                 visitedStocks.push_back(target);

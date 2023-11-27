@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="list"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\lib64\;CMake Files\..\..\..\usr\local\lib64\cmake\;CMake Files\..\..\..\usr\local\lib64\cmake\Catch2\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_default">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_default" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_default"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_default"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_default/fast">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_default" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_default"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_default/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_union">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_union" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_union"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_union"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_union/fast">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_union" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_union"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_union/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_chars">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_chars" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_chars"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_chars"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_chars/fast">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_chars" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_chars"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_chars/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_allocator">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_allocator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_allocator"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_allocator"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_tests_allocator/fast">
+				<Option output="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/list_tests_allocator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.dlSuVIRW4O/list/include_allocator"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_tests_allocator/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/tmp/tmp.dlSuVIRW4O/list/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.dlSuVIRW4O/list/test/ListTests.cpp">
+			<Option target="list_tests_default"/>
+			<Option target="list_tests_union"/>
+			<Option target="list_tests_chars"/>
+			<Option target="list_tests_allocator"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.dlSuVIRW4O/list/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.dlSuVIRW4O/list/../../../usr/local/lib64/cmake/Catch2/Catch2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib64\cmake\Catch2\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.dlSuVIRW4O/list/../../../usr/local/lib64/cmake/Catch2/Catch2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib64\cmake\Catch2\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.dlSuVIRW4O/list/../../../usr/local/lib64/cmake/Catch2/Catch2Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib64\cmake\Catch2\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
